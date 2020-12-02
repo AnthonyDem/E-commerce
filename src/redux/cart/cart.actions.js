@@ -19,3 +19,10 @@ export const clearItemFromCart = item => {
        payload: item
     });
 };
+
+export const moveItemCount = item => {
+    return ({
+        type: cartActionsTypes.MOVE_ITEM_COUNT,
+        payload: item
+    })
+}
